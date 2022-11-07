@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #E5E5E5;
+}
+
+body::before {
+  content: '';
+  background: #535971;
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+
+}
+
+.page {
+  height: 1084px;
+  width: 750px;
+  margin: 140px auto 0px;
+}
+
+header {
+  background: #535971;
+  color: #FFFFFF;;
+}
+
+header h1 {
+  margin-top: 140px;
+  font-family: 'Staatliches', cursive;
+  padding-bottom: 18px;
+  font-weight: normal;/*normal é o mesmo que 400*/
+  font-size: 48px;
+}
+
+header p {
+  font-family: 'Poppins', sans-serif; 
+  font-weight: normal;
+  font-size: 20px;
+}
+
+form {
+  background: #FFFFFF;
+  border-radius: 20px 20px 0px 0px;
+  padding: 64px;
+  height: 1084px;
+  margin-top: 58px;
+}
+
+fieldset {
+  border: none;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.private-information legend {
+  margin-bottom: 16px;
+}
+
+legend {
+  font-family: 'Staatliches', cursive;
+  color: #535971;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.private-information .line {
+  margin-bottom: 36px;
+}
+
+.line{
+border-bottom: 1px solid #E6E6F0;
+margin-bottom: 32px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper input {
+  font-size: 16px;
+  line-height: 26px;
+  color: #736f7a;
+  padding: 0 24px;
+}
+
+.input-wrapper label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #4E4958;
+  padding-bottom: 8px;
+}
+
+.input-wrapper span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  padding-bottom: 9px;
+  color: #C1BCCC;
+}
+
+.input-wrapper #email span {
+  margin-left: 9.12px;
+}
+
+.input-wrapper #senha span {
+  margin-left: 4.69px;
+}
+
+.input-wrapper #mentor span {
+  margin-left: 6.73px;
+}
+
+.input-wrapper #data span {
+  margin-left: 7.21px;
+}
+
+.input-wrapper span:hover {
+  color: #898691;
+}
+
+.name-surname {
+  display: flex;
+  gap: 22px;
+}
+
+#private-information-name { 
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  width: 300px;
+  height: 56px;
+}
+
+#private-information-surname { 
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  width: 300px;
+  height: 56px;
+}
+
+.input-wrapper input {
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  width: 622px;
+  height: 56px;
+}
+
+.mentor-information {
+  margin-top: 30px;
+}
+
+.time {
+  margin-top: 32px;
+}
+
+h2 {
+  font-family: 'Staatliches', cursive;
+  font-weight: normal;
+  font-size: 20px;
+  color: #535971;
+}
+
+.full-data {
+  display: flex;
+}
+
+.ghost {
+  position: relative;
+}
+
+#available-times-date {
+  width: 300px;
+  margin-right: 32px;
+}
+
+#available-times-begin-time, #available-times-finish-time{ 
+  width: 140px;
+  
+}
+
+#available-times-begin-time {
+  margin-right: 10px;
+}
+
+footer {
+  background: #535971;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px 0px 20px 20px;
+  width: 750px;
+  align-items: center;
+  margin: 160px auto 366px;
+  padding-top: 52.67px;
+}
+
+button {
+  background-color: #FF5374;
+  display: flex;
+  flex-direction: row;
+  padding: 15px 40px;
+  justify-content: center;
+  align-items: center;
+  width: 608px;
+  color: #FFFFFF;
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover { 
+  background: #b8324d;
+}
+
+input:invalid {
+  border: 1px solid red;
+}

@@ -1,0 +1,160 @@
+<!--Desafio aula 03 (MENTORIA)-->
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mentoria</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+  
+  <div class="page">
+
+    <header>
+      <h1>MENTORIA</h1>
+      <p>Preencha o formulário abaixo para <br/> agendar a sua mentoria</p>
+    </header>
+
+    <form action="" id="my-form">
+
+        <fieldset>
+
+          <div class="private-information">
+            <legend>INFORMAÇÕES PESSOAIS</legend>
+            <div class="line"></div>
+          </div>
+              
+
+            <div class="fieldset-wrapper">
+
+              <div class="name-surname">
+                <div class="input-wrapper">
+                  <label for="private-information-name">Nome</label>
+                  <input type="text" id="private-information-name" required/>
+                </div>
+
+                <div class="input-wrapper">           
+                  <label for="private-information-surname" >Sobrenome</label>
+                  <input type="text" id="private-information-surname" required/>
+                </div>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="private-information-email" id="email">Email<span>(digite um email válido)</span></label>
+                <input type="email" id="private-information-email" required/>
+              </div>
+            
+              <div class="input-wrapper">
+                <label for="private-information-password" id="senha">Senha<span>(mínimo de 8 caracteres)</span></label>
+                <input type="password" id="private-information-password" required minlength="8"/>
+              </div>
+
+            </div>
+
+        </fieldset>
+
+        <!---->
+
+          <fieldset>
+
+            <div class="mentor-information">
+              <legend>INFORMAÇÕES DO MENTOR</legend>
+              <div class="line"></div>
+            </div>
+
+            <div class="fieldset-wrapper">
+
+              <div class="input-wrapper">
+                <label for="mentor-information-name" id="mentor">Nome do seu mentor<span>(Só o primeiro nome)</span></label>
+                <input type="text" id="mentor-information-name" required/>
+              </div>
+
+            </div>
+
+          </fieldset>
+
+          <!---->
+
+          <fieldset>
+            
+            <div class="time">
+              <legend>SEUS HORÁRIOS DISPONÍVEIS</legend>
+              <div class="line"></div>
+           </div>
+
+            <div class="fieldset-wrapper">
+
+              <h2>PRIMEIRA MENTORIA</h2>
+
+                <div class="full-data">
+
+                  <div class="input-wrapper">
+                    <label for="available-times-date" id="data">Data<span>(DD/MM/AAAA)</span></label>
+                    <input type="" id="available-times-date" required/>
+                  </div>
+
+                  <div class="input-wrapper">
+                    <label for="available-times-begin-time">Das</label>
+                    <input type="" id="available-times-begin-time" required/>
+                  </div>
+
+                  <div class="input-wrapper">
+                    <label for="available-times-finish-time">Até</label>
+                    <input type="" id="available-times-finish-time" required/>
+                  </div>
+
+                </div>
+
+              <h2>SEGUNDA MENTORIA</h2>
+
+                <div class="full-data">
+
+                    <div class="input-wrapper">
+                      <label for="available-times-date" id="">Data<span>(DD/MM/AAAA)</span></label>
+                      <input type="" id="available-times-date" required/>
+                    </div>
+
+                    <div class="input-wrapper">
+                      <label for="available-times-begin-time">Das</label>
+                      <input type="" id="available-times-begin-time" required/>
+                    </div>
+
+                    <div class="input-wrapper">
+                      <label for="available-times-finish-time">Até</label>
+                      <input type="" id="available-times-finish-time" required/>
+                    </div>
+
+                </div>
+
+            </div>
+
+          </fieldset>
+
+      </div>
+
+    </form>
+
+    <footer>
+      <button type="submit" form="my-form">SALVAR</button>
+    </footer>
+
+  </div>
+</body>
+
+</html>
